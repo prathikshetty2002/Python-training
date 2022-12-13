@@ -34,12 +34,19 @@ if perct >=60 first class
 p<40 fail
 '''
 
-p=float(input('enter your percentage:'))
-if p >=60:
-    print(f'your percentage is {p} you secured first class')
-elif p<60 and p>=50:
-    print(f'your percentage is {p} you secured second class')
-elif p<50 and p>=40:
-    print(f'your percentage is {p} you passed')
+# p=float(input('enter your percentage:'))
+# if p >=60:
+#     print(f'your percentage is {p} you secured first class')
+# elif p<60 and p>=50:
+#     print(f'your percentage is {p} you secured second class')
+# elif p<50 and p>=40:
+#     print(f'your percentage is {p} you passed')
+# else:
+#     print(f'your percentage is {p} you failed!')
+
+year=int(input("Enter the year:"))
+if ((year%4==0 and year%100!=0) or year%400==0):
+    print("Leap Year")
 else:
-    print(f'your percentage is {p} you failed!')
+    print('Not Leap year')
+
