@@ -10,8 +10,8 @@
 #     print('Exam toh ho gya, ACT kar rha hu bro life toh hai nhi🙂')
 #     n-=1
 
-key=int(input('enter:'))
-sum=0
+# key=int(input('enter:'))
+# sum=0
 # for i in range(0,p+1,1):
 #     sum+=i
 
@@ -75,43 +75,37 @@ sum=0
 # for i in range(7,0,-2):
 #     print(i*"X")
 
-n1=100
-n2=1000
-sum=0
-L=[]
-for i in range(n1,n2+1,1):
-    temp=i
-    digit=i%10
-    i=i//10
-    sum+=(digit**3)
-    if temp==sum:
-        L.append(temp)
-    else:
-        pass
+# n1=100
+# n2=1000
+# sum=0
+# L=[]
+# for i in range(n1,n2+1,1):
+#     temp=i
+#     digit=i%10
+#     i=i//10
+#     sum+=(digit**3)
+#     if temp==sum:
+#         L.append(temp)
+#     else:
+#         pass
 
-print(L)
+# print(L)
            
 
-n1=100
-n2=1000
+#Python data structures
 
-L=[]
-def abc(n1,n2):
-    for i in range(n1,n2+1,1):
-        sum=0
-        temp=i
-        digit=i%10
-        i=i//10
-        sum+=(digit**3)
-        if temp==sum:
-            L.append(temp)
-        else:
-            pass
-    return L
+'''
+1) Lists - []
+2) Tuples - ()
+3) Dictionary - {key:value}
+4) Sets - {}
+'''
 
-ans=abc(n1,n2)
-print(ans)
-           
+elements=[[1,2,3],[4,5,6],[7,8,9]]
 
+#list within the tuple is still dynamic
 
-
+'''
+in python primitive values are passed by values
+and data structures are passed by reference
+'''
