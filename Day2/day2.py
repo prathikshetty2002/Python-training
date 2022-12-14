@@ -109,3 +109,20 @@ elements=[[1,2,3],[4,5,6],[7,8,9]]
 in python primitive values are passed by values
 and data structures are passed by reference
 '''
+def hi(name):
+    print(f'hi {name} 3:30 ko ghar jana hai')
+
+hi('arvind')
+
+def hindi(name):
+    print(name,'हम 3:30 बजे घर जाएंगे')
+def marathi(name):
+    print(name,'आम्ही 3:30 वाजता घरी जाऊ') 
+def eng(name):
+    print(name,'we will go home at 3:30')
+def intro(name,lang):
+    print('in intro')
+    lang(name)
+    print('intro ends')
+
+intro('prathik',eng)
